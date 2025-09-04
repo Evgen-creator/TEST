@@ -1,0 +1,281 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f6f7fb;
+  color: #111827;
+}
+
+
+.All {
+    user-select: none;
+  display: grid;
+  grid-template-columns: 306px 1fr; 
+  width: 1440px;
+  height: 1180px;
+  background: #f6f7fb;
+}
+
+
+.Board {
+  width: 306px;
+  height: 1180px; 
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e5e7eb;
+  opacity: 1;
+}
+
+
+.Board h1 {
+  position: relative;
+  width: 150px;
+  height: 39px;
+  top: 36px;
+  left: 73px;
+  opacity: 1;
+  font-weight: 600;
+  font-style: 'SemiBold', sans-serif;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 1%;
+}
+
+.Board p {
+    position: relative;
+    width: 18px;
+    top: -360px;
+    left: 205px;
+    opacity: 1;
+    color:#838383;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: -1%;
+}
+.Board img.logo {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 30px;
+    left: 30px;
+
+}
+
+
+.Board nav {
+  position: absolute;       
+  top: 139px;
+  left: 39px;
+  width: 116px;
+  height: 24px;
+  opacity: 1;
+}
+
+.Board nav img.Dashimg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: -10px;
+    opacity: 1;
+
+}
+.Board nav img.Primg{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 60px;
+    left: -10px;
+    opacity: 1;
+
+}
+.Board nav img.Inimg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 165px;
+    left: -10px;
+    opacity: 1;
+
+}
+.Board nav img.Proimg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 215px;
+    left: -10px;
+    opacity: 1;
+
+}
+.Board nav img.Himg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 268px;
+    left: -10px;
+    opacity: 1;
+
+}
+
+.Board nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+.Board nav li {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #9197B3;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.Board nav li.with-arrow2 {
+  font-size: 16px;
+  background: #5932EA;
+  color: white;
+}
+.Board nav li.with-arrow::after {
+  content: "›"; 
+  font-size: 16px;
+  color: #9197B3;
+}
+.Board nav li.with-arrow2::after {
+  content: "›"; 
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.Board nav li.with-arrow:hover {
+  background: #f3f4f6;
+}
+
+/* Користувач */
+.Board img {
+position: absolute;
+  width: 42px;
+  height: 42px;
+  top:1080px;
+  left: 28px;
+  border-radius: 50%;
+ 
+}
+
+.Board h2 {
+    position: relative;
+    width: 44px;
+    top: 290px;
+    left: 80px;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1%;
+}
+
+.Board h3 {
+    position: relative;
+    width: 101px;
+    top: -80px;
+    left: 80px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* Основний блок (Customers) */
+.Customers {
+  padding: 30px;
+}
+
+.Customers h1 {
+  margin-bottom: 20px;
+}
+
+.All-customers {
+  position: absolute;
+  background: #fff;
+  width: 1020px;
+  height: 812px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.All-customers h1 {
+    position: relative;
+    left: 30px;
+    top: -350px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.All-customers h2 {
+    position: relative;
+    width: 111px;
+    top: -325px;
+    left: -360px;
+    opacity: 1;
+  color: #16C098;
+  font-size: 14px;
+}
+
+.btn-list {
+    position: absolute;
+    background: #6d5cff;
+    color: white;
+    padding: 8px 16px;
+    top: 60px;
+    left: 400px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-list:hover {
+  background: #5544cc;
+}
+
+
+.search {
+position: relative;
+  display: flex;
+  width: 216px;
+  height: 38px;
+  top: -325px;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 5px 10px;
+  gap: 5px;
+}
+
+.search-img {
+  width: 16px;
+  height: 16px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.clients-label {
+    display: none;
+}
+
