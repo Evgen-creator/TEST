@@ -59,7 +59,10 @@ body {
 }
 .Board img.logo {
     position: absolute;
-    
+    width: 37px;
+    height: 37px;
+    top: 40px;
+    left: 15px;
 
 }
 
@@ -77,7 +80,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 10px;
+    top: 8px;
     left: -10px;
     opacity: 1;
 
@@ -86,7 +89,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 60px;
+    top: 57px;
     left: -10px;
     opacity: 1;
 
@@ -95,7 +98,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 165px;
+    top: 155px;
     left: -10px;
     opacity: 1;
 
@@ -104,7 +107,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 215px;
+    top: 205px;
     left: -10px;
     opacity: 1;
 
@@ -113,7 +116,7 @@ body {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 268px;
+    top: 255px;
     left: -10px;
     opacity: 1;
 
