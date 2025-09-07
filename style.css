@@ -1,25 +1,26 @@
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'Poppins', Tahoma, sans-serif;
   background: #f6f7fb;
   color: #111827;
 }
 
 
 .All {
-    user-select: none;
+  position: relative;
   display: grid;
   grid-template-columns: 306px 1fr; 
   width: 1440px;
-  height: 1180px;
+  min-height: 200px;
+  max-height: 600px;
   background: #f6f7fb;
 }
 
 
 .Board {
   width: 306px;
-  height: 1180px; 
+  height: 950px; 
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -33,24 +34,23 @@ body {
   position: relative;
   width: 150px;
   height: 39px;
-  top: 36px;
-  left: 73px;
+  top: 46px;
+  left: 53px;
   opacity: 1;
   font-weight: 600;
-  font-style: 'SemiBold', sans-serif;
+ 
   font-size: 26px;
   line-height: 100%;
   letter-spacing: 1%;
 }
 
-.Board p {
+.p1 {
     position: relative;
     width: 18px;
-    top: -360px;
-    left: 205px;
+    top: -286px;
+    left: 195px;
     opacity: 1;
     color:#838383;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: Medium;
     font-size: 10px;
@@ -59,10 +59,7 @@ body {
 }
 .Board img.logo {
     position: absolute;
-    width: 37px;
-    height: 37px;
-    top: 30px;
-    left: 30px;
+    
 
 }
 
@@ -129,16 +126,31 @@ body {
   gap: 10px;
   width: 250px;
 }
+.Board .cust1{
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color:#6d5cff ;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
 
 .Board nav li {
   padding: 10px 15px;
   border-radius: 8px;
-  color: #9197B3;
+  color: #b0b5c9;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  
+}
+
+.Board li:hover {
+  background:  #6d5cff;
+  color: #b0b5c9;
 }
 .Board nav li.with-arrow2 {
   font-size: 16px;
@@ -165,7 +177,7 @@ body {
 position: absolute;
   width: 42px;
   height: 42px;
-  top:1065px;
+  top: 880px;
   left: 28px;
   border-radius: 50%;
  
@@ -177,7 +189,7 @@ position: absolute;
     top: 290px;
     left: 80px;
     opacity: 1;
-    font-family: 'Poppins', sans-serif;
+    top: 250px;
     font-weight: 400;
     font-style: Medium;
     font-size: 14px;
@@ -188,7 +200,7 @@ position: absolute;
 .Board h3 {
     position: relative;
     width: 101px;
-    top: -80px;
+    top: -30px;
     left: 80px;
     font-size: 12px;
     color: gray;
@@ -199,65 +211,76 @@ position: absolute;
   padding: 30px;
 }
 
+.h12{
+  position: relative;
+  width:250px;
+  height: 39px;
+  top: 10px;
+  left: 53px; 
+}
+
 .Customers h1 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  
 }
 
 .All-customers {
-  position: absolute;
+  position: relative;
   background: #fff;
-  width: 1020px;
-  height: 812px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 800px;
   padding: 20px;
+  top: 5px;
+  left: 50px;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px; 
 }
 
 .All-customers h1 {
-    position: relative;
-    left: 30px;
-    top: -350px;
-  font-size: 20px;
+  position: relative;
+  bottom: -25px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .All-customers h2 {
-    position: relative;
-    width: 111px;
-    top: -325px;
-    left: -360px;
-    opacity: 1;
+  position: relative;
+  bottom: 30px;
   color: #16C098;
   font-size: 14px;
 }
 
-.btn-list {
-    position: absolute;
+#btn-list {
+  position: relative;
+    border-style: none;
     background: #6d5cff;
     color: white;
-    padding: 8px 16px;
-    top: 60px;
-    left: 400px;
-    border-radius: 8px;
+    bottom: 183px;
+    left: 61%;
+    padding: 12px 15px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: fit-content;
 }
 
-.btn-list:hover {
+#btn-list:hover {
   background: #5544cc;
 }
 
 
 .search {
-position: relative;
+  
+  position: relative;
   display: flex;
+  left : 75%;
+  bottom: 125px;
   width: 216px;
   height: 38px;
-  top: -325px;
   align-items: center;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -275,7 +298,97 @@ position: relative;
   outline: none;
   font-size: 14px;
 }
+
 .clients-label {
     display: none;
+    overflow-x: auto;
+    
 }
 
+.customers-table {
+  width: 100%;
+  
+  border-collapse: collapse;
+  font-size: 14px;
+  
+}
+
+.customers-table th,
+.customers-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+  
+}
+
+.status.active {
+  color: #16C098;
+  font-weight: 600;
+}
+.status.inactive {
+  color: #ff5c5c;
+  font-weight: 600;
+}
+
+.clients-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+    display: none;
+    top: -125px;
+    margin-top: 20px;
+    padding: 10px;
+    height: 1000px;
+   animation: appearFromCenter 0.5s ease forwards;
+}
+@keyframes appearFromCenter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.customers-table {
+    width: 100%;
+    
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.customers-table th,
+.customers-table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 13px 15px;
+
+}
+
+.customers-table th {
+
+    color: #B5B7C0;
+    font-weight: 600;
+    
+}
+
+
+.status-btn { 
+  border: solid 2px #e74d3c;
+  background:#e74d3c8c;
+   color:#e74d3c; 
+    padding:5px 12px;
+     border-radius:5px;
+      cursor:pointer;
+       transition:0.3s; }
+
+.status-btn:hover { 
+  transform:scale(1.05); }
+
+
+.customers-table th {
+  position: sticky;
+  top: -10px; 
+  background-color: #fff; 
+  z-index: 10; 
+  color: #B5B7C0;
+  font-weight: 600;
+  padding: 13px 15px;
+}
