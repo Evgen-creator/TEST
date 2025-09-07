@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TEST</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="All">    
     <div class="Board"> 
-    <img src="img/setting 1.png" class="logo">
+    
     <h1>Dashboard</h1>
-    <p>v.01</p>
+    <p class="p1">v.01</p>
         <nav>
             <ul>
-                <li><img src="img/key-square.png" class="Dashimg">Dashboard</li>
-                <li class="with-arrow"><img src="img/3d-square 1.png" class="Primg">Product</li>
-                <li class="with-arrow2">Customers</li>
-                <li class="with-arrow"><img src="img/wallet-money 2.png" class="Inimg">Income</li>
-                <li class="with-arrow"><img src="img/discount-shape 1.png" class="Proimg">Promote</li>
-                <li class="with-arrow"><img src="img/message-question 1.png" class="Himg">Help</li>
+                <li>Dashboard</li>
+                <li>Productㅤㅤ  ></li>
+                <li class="cust1">Customersㅤㅤ  ></li>
+                <li>Incomeㅤㅤ  ></li>
+                <li>Promote ㅤㅤ ></li>
+                <li>Helpㅤㅤ  ></li>
             </ul>
         </nav>
 
@@ -28,55 +30,26 @@
         <h3>Project Manager</h3>
     </div>
     <div class="Customers">
-        <h1>Hello Evano!,</h1>
+        <h1 class="h12">Hello Evano👋🏼,</h1>
         <div class="All-customers">
             <h1>All Customers</h1>
             <h2>Active Members</h2>
 
-            <div class="btn-list">Show Customers</div>
-
+            
             <div class="search">
                 <img src="img/search 1.png" alt="" class="search-img">
                 <input id="search" name="search" type="search" placeholder="Search" />
             </div>
+
+            <button  id="btn-list">Show Customers</button>
+
+            <div class="clients-label" id="clients-label"></div>
+
+            
         </div>
     </div> 
-    <div class="clients-label">
-        <thead>
-          <tr>
-            <th scope="col">Customer Name</th>
-            <th scope="col">Company</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Email</th>
-            <th scope="col">Country</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <ul class="user-list">
-
-
-            <label class="active-inactive">
-                <input type="checkbox">
-                <span class="btn"></span>
-            </label>
-        </ul>
-        <nav aria-label="Навигация по страницам">
-            <ul>
-                <li>«</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li><span>…</span></li>
-                <li>40</a></li>
-                <li>»</li>
-            </ul>
-        </nav> 
-    </div>   
 </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-<!--Добавила пока только картинки и убрала коментарий чтоб проверить кнопку и тд-->
