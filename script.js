@@ -1,7 +1,7 @@
 const API_Users = "https://jsonplaceholder.typicode.com/users"
 
 let allUsers = []
-let statusMap = {} // для хранения статуса каждого пользователя
+let statusMap = {} 
 
 document.getElementById("btn-list").addEventListener("click", async function () {
   const container = document.getElementById("clients-label")
@@ -15,7 +15,7 @@ document.getElementById("btn-list").addEventListener("click", async function () 
   if (allUsers.length === 0) {
     allUsers = await (await fetch(API_Users)).json()
     allUsers.forEach(u => {
-      if (!statusMap[u.id]) statusMap[u.id] = "inactive" // инициализация статуса
+      if (!statusMap[u.id]) statusMap[u.id] = "inactive" 
     })
   }
 
@@ -58,7 +58,7 @@ function renderTable(users) {
   buttons.forEach(btn => {
     const id = btn.dataset.id
 
-    // устанавливаем стиль кнопки по текущему статусу
+   
     setStatusStyle(btn, statusMap[id])
 
     btn.addEventListener("click", () => {
@@ -101,3 +101,4 @@ searchInput.addEventListener("input", function () {
 
   renderTable(filtered)
 })
+
